@@ -1,0 +1,5556 @@
+{
+ "roomTypes": [
+  {
+   "code": "H",
+   "name": "Habitable room"
+  },
+  {
+   "code": "K",
+   "name": "Kitchen"
+  },
+  {
+   "code": "U",
+   "name": "Utility"
+  },
+  {
+   "code": "W",
+   "name": "Washroom"
+  },
+  {
+   "code": "B",
+   "name": "Balcony"
+  },
+  {
+   "code": "S",
+   "name": "Support space"
+  },
+  {
+   "code": "F",
+   "name": "Flat-level"
+  }
+ ],
+ "categories": [
+  {
+   "number": 1,
+   "name": "Area measurement (carpet, RERA, liveable)",
+   "group": "Measurement",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S",
+    "F"
+   ],
+   "conditionalRoomTypes": [],
+   "appliesTo": "Every space in the flat: all rooms, bathrooms, balconies, utility, AC ledge, store, maid room",
+   "tools": "Laser distance meter, steel tape, tablet with floor plan, calculator",
+   "commonFindings": [
+    "Total carpet area below the agreement (often balcony and utility)",
+    "shafts or ducts counted inside carpet area",
+    "balcony counted in carpet area",
+    "internal walls thicker than the plan",
+    "super built-up loading higher than quoted"
+   ],
+   "parameters": [
+    {
+     "ref": "1.1",
+     "name": "Reference data to collect",
+     "whatToCheck": "Carpet area stated in the sale agreement, RERA registration, sanctioned plan and brochure. Super built-up (saleable) area, built-up area and loading %. Exclusive balcony, utility and terrace areas as stated. Room-wise dimension schedule if given. Rate per sq ft (for shortfall value).",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Agreement annexure, RERA project page, sanctioned plan, price sheet",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "1.2",
+     "name": "Area definitions to apply",
+     "whatToCheck": "RERA carpet area = net usable floor area including internal partition walls, excluding external walls, service shafts, exclusive balcony or verandah and exclusive open terrace (confirm the state rules wording). Usable floor area (liveable / visible carpet) = wall-to-wall room areas. Built-up, plinth and super built-up areas as defined in the agreement.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "RERA Act Sec 2(k), state RERA rules, agreement definitions",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "1.3",
+     "name": "Spaces to measure",
+     "whatToCheck": "Bedrooms, living, dining, drawing, kitchen, bathrooms and toilets, store, maid room and maid toilet, utility / wash area, passage and foyer, pooja niche, study nook, balconies, AC unit area, sunken areas, planters, niches and recesses.",
+     "checkType": "Measure",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Laser distance meter, steel tape",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "1.4",
+     "name": "Additions and deductions",
+     "whatToCheck": "Column and beam projections, niches, recesses, bay windows, shaft cut-outs and wall offsets, each added or deducted according to the definition in use.",
+     "checkType": "Measure",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Laser distance meter, steel tape",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "1.5",
+     "name": "Wall thickness",
+     "whatToCheck": "Internal and external wall thickness at door and window reveals, to build up carpet area from usable area.",
+     "checkType": "Measure",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Steel tape, digital vernier caliper at reveals",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "1.6",
+     "name": "Balcony, utility, terrace and AC ledge",
+     "whatToCheck": "Measure each separately and confirm none is counted inside the carpet area unless the agreement says so.",
+     "checkType": "Measure + Verify",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Laser distance meter, steel tape",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "1.7",
+     "name": "Shafts and ducts",
+     "whatToCheck": "Identify and measure plumbing, electrical and AC shafts; confirm they are excluded from carpet area.",
+     "checkType": "Measure + Verify",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Laser distance meter, torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 2,
+   "name": "Plastering",
+   "group": "Plaster and ceilings",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S"
+   ],
+   "conditionalRoomTypes": [],
+   "appliesTo": "All internal walls, shaft faces, and external wall faces visible from balconies and windows",
+   "tools": "2 m straight edge, spirit level, plumb bob, sounding hammer, side-light torch, crack gauge",
+   "commonFindings": [
+    "Waviness visible in side light",
+    "hollow plaster at beam-column junctions",
+    "cracks at masonry-RCC junctions",
+    "poorly refilled chases",
+    "out-of-square corners and reveals"
+   ],
+   "parameters": [
+    {
+     "ref": "2.1",
+     "name": "Surface finish",
+     "whatToCheck": "Smoothness, undulation, waviness, trowel and ripple marks, uneven patches.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Side-light torch, 2 m straight edge",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "2.2",
+     "name": "Flatness and plumb",
+     "whatToCheck": "Gap under a 2 m straight edge, wall plumb, plane of the wall across its height.",
+     "checkType": "Measure",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "2 m straight edge with feeler gauge or wedge, plumb bob",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "2.3",
+     "name": "Hollowness and debonding",
+     "whatToCheck": "Drummy sound, bulging, loose plaster, especially near beam-column junctions and slab undersides.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Sounding hammer or tapping rod",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "2.4",
+     "name": "Cracks",
+     "whatToCheck": "Hairline, map and shrinkage cracks, cracks at masonry-RCC junction, diagonal cracks at openings, cracks along chases and window corners.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Crack width gauge, torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "2.5",
+     "name": "Corners, edges and reveals",
+     "whatToCheck": "Squareness and straightness of internal and external corners, chipped edges, door and window reveals and returns, wall-ceiling junction line.",
+     "checkType": "Measure + Visual",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Try square, straight edge",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "2.6",
+     "name": "Thickness and consistency",
+     "whatToCheck": "Visible thickness at cut-outs and openings, over-thick patches, finishing coat quality.",
+     "checkType": "Measure",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Depth gauge or caliper at cut-outs",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "2.7",
+     "name": "Workmanship defects",
+     "whatToCheck": "Pop-outs, lime bursting, patchwork, rough patches, plaster drips and splashes, uneven texture, blistering.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Side-light torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "2.8",
+     "name": "Moisture-linked defects",
+     "whatToCheck": "Efflorescence, powdering, flaking and damp stains on plaster. (Source diagnosis in Category 4.)",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, moisture meter",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "2.9",
+     "name": "Plaster around services",
+     "whatToCheck": "Chases for electrical and plumbing refilled flush, mesh over chases, plaster around switch boxes and pipe sleeves.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, straight edge",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 3,
+   "name": "Ceilings",
+   "group": "Plaster and ceilings",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S"
+   ],
+   "conditionalRoomTypes": [],
+   "appliesTo": "All rooms including bathrooms, kitchen, balconies and utility",
+   "tools": "Laser level, torch, moisture meter, thermal camera, telescopic pole",
+   "commonFindings": [
+    "Stains below upper-floor wet areas",
+    "hairline cracks along beams",
+    "uneven soffit finish",
+    "fan hooks missing or not load-rated"
+   ],
+   "parameters": [
+    {
+     "ref": "3.1",
+     "name": "Soffit finish",
+     "whatToCheck": "Plaster, putty and paint finish, undulation, patchwork, tray lines, roller marks.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Side-light torch, straight edge on pole",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "3.2",
+     "name": "Cracks",
+     "whatToCheck": "Shrinkage cracks, cracks along beams, at wall-ceiling junctions, diagonal and map cracks.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, crack gauge",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "3.3",
+     "name": "Stains and moisture",
+     "whatToCheck": "Water stains, rust stains, yellowing, efflorescence, dampness beneath bathrooms, balconies and utility of the floor above, stains from AC drains.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Moisture meter, thermal camera",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "3.4",
+     "name": "Level and sag",
+     "whatToCheck": "Soffit level between rooms, sag at mid-span, beam bottoms.",
+     "checkType": "Measure",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Laser level",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "3.5",
+     "name": "Embedded points and openings",
+     "whatToCheck": "Light points, fan hooks or boxes (presence and strength), exposed conduit, sleeves, AC pipe sleeves, shaft openings, sprinkler and detector positions.",
+     "checkType": "Visual + Verify",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, tape",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "3.6",
+     "name": "Services under or through the ceiling",
+     "whatToCheck": "Exposed wiring, pipes, drain lines at ceiling level, insulation.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "3.7",
+     "name": "Bathroom and kitchen ceilings",
+     "whatToCheck": "Suitable moisture-resistant finish, access panels for services if provided.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "3.8",
+     "name": "Junction finishing",
+     "whatToCheck": "Wall-ceiling line straight, cornices, shadow gaps and covings.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, straight edge",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 4,
+   "name": "Dampness and waterproofing",
+   "group": "Moisture",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S"
+   ],
+   "conditionalRoomTypes": [
+    "H",
+    "S"
+   ],
+   "appliesTo": "Wet areas (bathrooms, toilets, kitchen, utility, balconies), external walls and windows, shafts, ceilings, skirting zones",
+   "tools": "Moisture meter (pin and pinless), thermal camera, drain plugs and sealing clay, water, marker, spirit level or digital level, torch, water dropper",
+   "commonFindings": [
+    "Standing water on bathroom and balcony floors",
+    "hairline gaps at wall-floor junctions",
+    "seepage at window frames",
+    "damp patches below upper-floor wet areas",
+    "failed ponding test"
+   ],
+   "parameters": [
+    {
+     "ref": "4.1",
+     "name": "Visual signs",
+     "whatToCheck": "Stains, tide marks, efflorescence, paint blistering or peeling, bubbling plaster, fungus and mould, swollen wood or laminate, rust stains, musty odour, wet or sagging patches.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, camera",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.2",
+     "name": "Moisture measurement",
+     "whatToCheck": "Readings on a grid across walls, floors, skirting and ceilings, compared with a reference dry area, recorded with location and material type.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Pin-type and pinless moisture meter",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.3",
+     "name": "Moisture mapping and thermography",
+     "whatToCheck": "Thermal imaging of walls, ceilings and floors to find cold or wet zones, confirmed with the meter; record time and conditions.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Thermal imaging camera, moisture meter",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.4",
+     "name": "Marble test",
+     "whatToCheck": "On marble floors and marble skirting: moisture readings against a dry reference area; dark, damp or wet-looking patches; rising-damp and water stains; white salt deposits; staining along wet-area walls and balcony doors; water-drop absorption test on an inconspicuous spot to check sealing and porosity; stains that return after cleaning.",
+     "checkType": "Test + Visual",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Moisture meter, water dropper, thermal camera, camera",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.5",
+     "name": "Ponding test",
+     "whatToCheck": "Plug drains and hold water in bathrooms, toilets, utility, kitchen wet zone, balconies and sunken slabs; mark water level; record duration (commonly 24 to 48 hours as per specification); check ceiling of the floor below for seepage. Needs builder consent and access below.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Drain plugs, sealing clay, water, marker, depth gauge, torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.6",
+     "name": "Floor slope toward drains",
+     "whatToCheck": "Slope direction and gradient, water stagnation after a pour test, puddles at corners.",
+     "checkType": "Measure + Test",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Digital level or spirit level with wedge, water jug",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.7",
+     "name": "Wall-floor junctions in wet areas",
+     "whatToCheck": "Gaps, cracks, sealant continuity, waterproofing upstand height at walls.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, steel rule",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.8",
+     "name": "Bathrooms and toilets",
+     "whatToCheck": "Shower zone, wall behind shower and WC, shower curb, wall-floor corners, door threshold, pipe penetrations, drain surrounds, concealed cistern wall.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Moisture meter, thermal camera",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.9",
+     "name": "Kitchen and utility",
+     "whatToCheck": "Sink wall, platform-wall joint, dado, floor drain, washing machine area.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Moisture meter",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.10",
+     "name": "Balcony and exterior-facing floors",
+     "whatToCheck": "Slope, drain outlets, parapet-floor junction, door threshold, floor-wall joint.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Water pour test, moisture meter",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.11",
+     "name": "External walls and openings",
+     "whatToCheck": "Wall-window frame joints, sill slope, cracks, lintel tops, sunshades, seepage after rain or a spray test.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Moisture meter, water spray test",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.12",
+     "name": "Pipe penetrations and shafts",
+     "whatToCheck": "Sleeves sealed, pipe-slab junctions, shaft wall dampness, sunken slab areas, drain pockets.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, moisture meter",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.13",
+     "name": "AC condensate and drain lines",
+     "whatToCheck": "Dripping or seepage at AC pipe sleeves and ledges.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.14",
+     "name": "Plumbing-related leakage signs",
+     "whatToCheck": "Bubbling near plumbing, wet wall behind fixtures, meter movement (see 13.7).",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Moisture meter, thermal camera",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.15",
+     "name": "Ceiling seepage from above",
+     "whatToCheck": "Stains and active drips beneath upper-floor wet areas.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, moisture meter",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.16",
+     "name": "Waterproofing evidence",
+     "whatToCheck": "Builder warranty, membrane type, ponding test report for the unit.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Builder records",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "4.17",
+     "name": "Timing and re-test",
+     "whatToCheck": "Note whether the inspection is in dry or monsoon conditions; plan re-checks after rain where results are doubtful.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Inspection protocol",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 5,
+   "name": "Flooring",
+   "group": "Finishes",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S"
+   ],
+   "conditionalRoomTypes": [],
+   "appliesTo": "All rooms with floor finish: bedrooms, living, dining, drawing, kitchen, store, maid room, passage, balconies, bathrooms (finish only)",
+   "tools": "Hollow-tile tapper or sounding rod, 2 m straight edge, laser level, feeler gauge, joint gauge, torch",
+   "commonFindings": [
+    "Hollow marble or tiles",
+    "chipped edges",
+    "stains and scratches on marble",
+    "gaps between marble joints",
+    "offset between adjacent tiles",
+    "grouting gaps",
+    "cracked skirting"
+   ],
+   "parameters": [
+    {
+     "ref": "5.1",
+     "name": "Material and finish",
+     "whatToCheck": "Type vs specification, shade and batch uniformity, pattern and vein matching, polish, edge finish.",
+     "checkType": "Verify + Visual",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Camera, side-light torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "5.2",
+     "name": "Hollowness",
+     "whatToCheck": "Tap every tile or slab on a grid; record hollow count per room, edge and corner hollows, and severity (minor vs full).",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Hollow-tile tapper, sounding rod",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "5.3",
+     "name": "Surface damage",
+     "whatToCheck": "Cracks, chips, scratches, stains, dents, edge damage, discolouration.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Side-light torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "5.4",
+     "name": "Level and flatness",
+     "whatToCheck": "Floor level across the room and gap under a 2 m straight edge. (Water slope in wet areas: 4.6.)",
+     "checkType": "Measure",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Laser level, 2 m straight edge, feeler gauge",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "5.5",
+     "name": "Joints and grouting",
+     "whatToCheck": "Joint width consistency, alignment, grout fill, gaps, colour match, hairline cracks, sealed movement joints.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Joint gauge, steel rule",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "5.6",
+     "name": "Pattern and alignment",
+     "whatToCheck": "Straight lines, cut tiles at edges and doors, symmetry, vein continuity, cuts around fixtures and drains.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "String line, straight edge",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "5.7",
+     "name": "Edges and transitions",
+     "whatToCheck": "Threshold strips, level change between rooms and materials, door threshold finish, edge sealing.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Straight edge, steel rule",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "5.8",
+     "name": "Skirting",
+     "whatToCheck": "Alignment, gap to wall, hollowness, cracks, corner mitres, height, joints, fixing.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Tapper, steel rule",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "5.9",
+     "name": "Anti-skid flooring (wet areas and balconies)",
+     "whatToCheck": "Finish suitable for wet use and matches specification.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual, specification",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "5.10",
+     "name": "Marble and stone specifics",
+     "whatToCheck": "Polish, stains, pitting, natural fissures, resin filling, shade and vein mismatch.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Side-light torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "5.11",
+     "name": "Floor around fixtures and cut-outs",
+     "whatToCheck": "Finish around floor traps, drains, manholes and door frames.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "5.12",
+     "name": "Expansion joints",
+     "whatToCheck": "Presence at required locations and filling.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 6,
+   "name": "Wall tiling",
+   "group": "Finishes",
+   "roomTypes": [
+    "K",
+    "U",
+    "W",
+    "B"
+   ],
+   "conditionalRoomTypes": [
+    "B"
+   ],
+   "appliesTo": "Bathrooms, toilets, kitchen dado and backsplash, utility, balcony wall tiles",
+   "tools": "Hollow-tile tapper, spirit level, laser line, straight edge, joint gauge, torch",
+   "commonFindings": [
+    "Grouting gaps between wall tiles and between wall and floor tiles",
+    "chipped tiles",
+    "hollow tiles",
+    "uneven cuts",
+    "grouting gaps around the trap"
+   ],
+   "parameters": [
+    {
+     "ref": "6.1",
+     "name": "Tile material and specification",
+     "whatToCheck": "Type, size, thickness, shade and batch consistency, finish vs specification or sample.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Caliper, specification",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B"
+     ]
+    },
+    {
+     "ref": "6.2",
+     "name": "Hollowness and debonding",
+     "whatToCheck": "Tap every tile; record hollow tiles and loose edges.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Hollow-tile tapper",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B"
+     ]
+    },
+    {
+     "ref": "6.3",
+     "name": "Alignment",
+     "whatToCheck": "Joint lines straight, plumb and level, continuous across walls, pattern alignment.",
+     "checkType": "Measure",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Laser line, spirit level, straight edge",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B"
+     ]
+    },
+    {
+     "ref": "6.4",
+     "name": "Joints and grouting",
+     "whatToCheck": "Joint width consistency, grout fill, gaps, colour, hairline cracks, grout haze.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Joint gauge, torch",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B"
+     ]
+    },
+    {
+     "ref": "6.5",
+     "name": "Surface defects",
+     "whatToCheck": "Chips, cracks, scratches, glaze defects, pin-holes, warping, colour variation.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Side-light torch",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B"
+     ]
+    },
+    {
+     "ref": "6.6",
+     "name": "Flatness and lippage",
+     "whatToCheck": "Tile-to-tile lippage and plane of the tiled wall.",
+     "checkType": "Measure",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Straight edge, feeler gauge",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B"
+     ]
+    },
+    {
+     "ref": "6.7",
+     "name": "Cuts and terminations",
+     "whatToCheck": "Cuts around fixtures, pipes, switchboards and niches; neat edges; edge trims; internal and external corners; top edge finish at dado height.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B"
+     ]
+    },
+    {
+     "ref": "6.8",
+     "name": "Corners and junctions",
+     "whatToCheck": "Wall-wall corners, wall-floor joint sealant, wall-countertop joints, movement joints.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B"
+     ]
+    },
+    {
+     "ref": "6.9",
+     "name": "Kitchen backsplash and wet zones",
+     "whatToCheck": "Coverage behind sink and hob, sealing around fixtures.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B"
+     ]
+    },
+    {
+     "ref": "6.10",
+     "name": "Access and fixture areas",
+     "whatToCheck": "Tiles around concealed valves, cut-outs and access panels.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 7,
+   "name": "Stonework",
+   "group": "Finishes",
+   "roomTypes": [
+    "K",
+    "W",
+    "B"
+   ],
+   "conditionalRoomTypes": [],
+   "appliesTo": "Kitchen, washrooms and balconies, where stonework is provided (one set of checks per room)",
+   "tools": "Steel tape, spirit level, tapping rod, caliper, torch",
+   "commonFindings": [
+    "Dents and scratches on granite",
+    "chipped edges",
+    "grouting gaps between stone and wall tiles",
+    "hollow stone sills",
+    "inconsistent seam finish"
+   ],
+   "parameters": [
+    {
+     "ref": "7.1",
+     "name": "Platform material and thickness",
+     "whatToCheck": "Granite, marble or quartz type, thickness, colour and pattern, edge profile against the specification.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Caliper, specification",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "7.2",
+     "name": "Platform surface defects",
+     "whatToCheck": "Scratches, chips, dents, stains, pits, resin-filled cracks, cracks, polish lines, shade variation between slabs.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Side-light torch",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "7.3",
+     "name": "Platform seams and joints",
+     "whatToCheck": "Open or cracked seams, seam width, level difference at the seam, colour fill, missing sealing.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Straight edge, steel rule",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "7.4",
+     "name": "Platform edges and corners",
+     "whatToCheck": "Chipped edges, rough or unpolished edges, sharp corners, uneven overhang, wrong edge profile.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Steel rule",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "7.5",
+     "name": "Platform level and slope",
+     "whatToCheck": "Platform out of level, water pooling, slope away from the sink.",
+     "checkType": "Measure",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Spirit level",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "7.6",
+     "name": "Platform fixing and support",
+     "whatToCheck": "Hollowness below the stone, loose or missing brackets, unsupported cantilever, loose wall fixing, movement when pressed.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Tapping rod, manual push test",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "7.7",
+     "name": "Sink and hob cut-outs",
+     "whatToCheck": "Wrong size or position, rough or chipped cut-out edges, corner cracks, overcut gaps.",
+     "checkType": "Measure + Visual",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Steel tape, torch",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "7.8",
+     "name": "Platform-wall joint and backsplash",
+     "whatToCheck": "Gap behind the platform, sealant missing or uneven, gaps between stone and wall tiles.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "7.9",
+     "name": "Kitchen window sill",
+     "whatToCheck": "Cracks, hollowness, wrong slope, missing drip groove, chipped edges, stains.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Spirit level, tapping rod",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "7.10",
+     "name": "Counter or vanity top",
+     "whatToCheck": "Material and thickness against the specification; scratches, chips, dents, stains, cracks, edge defects, seam gaps.",
+     "checkType": "Verify + Visual",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Caliper, side-light torch",
+     "section": "Washroom",
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "7.11",
+     "name": "Counter cut-out and fixing",
+     "whatToCheck": "Basin cut-out size and finish, corner cracks, hollowness below the top, loose or unsupported top, gap to the wall, missing sealant.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Tapping rod, torch",
+     "section": "Washroom",
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "7.12",
+     "name": "Door threshold or curb",
+     "whatToCheck": "Wrong height, out of level, no slope to the wet side, hollowness, cracks, chipped edges, loose threshold, gaps with tiles, no water stopper between wet and dry zones.",
+     "checkType": "Visual + Measure + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Spirit level, steel rule, tapping rod",
+     "section": "Washroom",
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "7.13",
+     "name": "Shower curb or partition stone (if provided)",
+     "whatToCheck": "Wrong height or slope, cracks, chips, hollowness, unsealed joints with wall and floor, water spreading outside the shower zone.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, water jug",
+     "section": "Washroom",
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "7.14",
+     "name": "Window sill",
+     "whatToCheck": "Cracks, hollowness, wrong slope, missing drip groove, chipped edges, stains, gaps at the frame.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Spirit level, tapping rod",
+     "section": "Washroom",
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "7.15",
+     "name": "Niche or shelf stone",
+     "whatToCheck": "No slope to drain, cracks, chips, loose shelf, rough edges.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Spirit level",
+     "section": "Washroom",
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "7.16",
+     "name": "Door threshold or sill",
+     "whatToCheck": "Wrong height against the floor, no outward slope, hollowness, cracks, chipped edge, gap at the door frame, water entry at the threshold.",
+     "checkType": "Visual + Measure + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Spirit level, tapping rod, water pour",
+     "section": "Balcony",
+     "roomTypes": [
+      "B"
+     ]
+    },
+    {
+     "ref": "7.17",
+     "name": "Parapet coping or top stone (if provided)",
+     "whatToCheck": "Out of level, wrong slope, open joints, cracks, loose or hollow pieces, weak fixing, no drip edge.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Spirit level, tapping rod",
+     "section": "Balcony",
+     "roomTypes": [
+      "B"
+     ]
+    },
+    {
+     "ref": "7.18",
+     "name": "Window sill and ledges",
+     "whatToCheck": "Cracks, hollowness, wrong slope, missing drip groove, chipped edges.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Spirit level, tapping rod",
+     "section": "Balcony",
+     "roomTypes": [
+      "B"
+     ]
+    },
+    {
+     "ref": "7.19",
+     "name": "Surface and edge defects",
+     "whatToCheck": "Scratches, chips, stains, pits, loss of polish, weather discolouration, edge damage.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Side-light torch",
+     "section": "Balcony",
+     "roomTypes": [
+      "B"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 8,
+   "name": "Painting and polishing",
+   "group": "Finishes",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S",
+    "F"
+   ],
+   "conditionalRoomTypes": [
+    "F"
+   ],
+   "appliesTo": "All walls and ceilings, metalwork, doors, door frames and other wooden elements. Every defect below is logged on its own",
+   "tools": "Raking-light torch, coating thickness gauge (optional), camera",
+   "commonFindings": [
+    "Paint stains on window glass (very frequent)",
+    "uneven shade",
+    "visible touch-ups",
+    "roller marks",
+    "paint on switch plates and hardware",
+    "patchy or uneven door polish"
+   ],
+   "parameters": [
+    {
+     "ref": "8.1",
+     "name": "System and specification",
+     "whatToCheck": "Putty coats, primer, emulsion type and brand, number of coats, finish (matt or sheen), texture.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Builder records, specification",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.2",
+     "name": "Uneven or patchy coverage",
+     "whatToCheck": "Missed spots, thin patches, putty or primer showing through, uneven sheen, lap marks.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Raking-light torch",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.3",
+     "name": "Roller and brush marks",
+     "whatToCheck": "Visible roller or brush strokes, streaks, orange-peel texture.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Raking-light torch",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.4",
+     "name": "Runs, sags and drips",
+     "whatToCheck": "Paint runs or sags on walls and ceilings, drip beads at edges, paint pooling in corners.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Raking-light torch",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.5",
+     "name": "Peeling and flaking",
+     "whatToCheck": "Film lifting or lost, peeling at corners, near wet areas and over putty.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.6",
+     "name": "Blistering and bubbling",
+     "whatToCheck": "Blisters or bubbles in the film from trapped moisture or poor adhesion, pop marks. (Moisture source: Category 4.)",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, moisture meter",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.7",
+     "name": "Cracking and crazing",
+     "whatToCheck": "Hairline cracks or crazing in the film, filled cracks showing through the paint.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.8",
+     "name": "Chalking and powdering",
+     "whatToCheck": "Powdery residue when rubbed, loose or dusty film.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Dry cloth wipe test",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.9",
+     "name": "Stains and discolouration",
+     "whatToCheck": "Water, rust and yellow stains, efflorescence marks, mould or fungus, marker or smoke marks.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.10",
+     "name": "Dust, grit and pinholes",
+     "whatToCheck": "Dust or grit stuck in the film, pinholes, pimples, brush hairs.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Raking-light torch",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.11",
+     "name": "Visible touch-ups and patches",
+     "whatToCheck": "Patch outlines, different sheen or shade at repairs, repainted spots that show in daylight.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Raking-light torch",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.12",
+     "name": "Shade and colour mismatch",
+     "whatToCheck": "Shade different from the approved card; difference between walls, rooms, coats or against the ceiling; fading.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Shade card, daylight",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.13",
+     "name": "Cut-in and edge lines",
+     "whatToCheck": "Wavy or untidy lines at ceiling, skirting, frames, switch plates and tile edges; paint bleeding under tape lines.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.14",
+     "name": "Paint on other surfaces",
+     "whatToCheck": "Spills and splashes on glass (very frequent), window frames, tiles, stone, switch plates, hardware, floors and sanitaryware.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, camera",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.15",
+     "name": "Dry film thickness (optional)",
+     "whatToCheck": "Measured film thickness on painted surfaces.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Coating thickness gauge",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.16",
+     "name": "Wet-area paint",
+     "whatToCheck": "Moisture-resistant paint where specified.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Builder records",
+     "section": "Walls and ceilings",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.17",
+     "name": "Metalwork paint",
+     "whatToCheck": "Rust-protection coat missing, uneven enamel or powder coat, runs, chips, rust spots through the paint, paint on glass and fixings.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": "Metalwork",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.18",
+     "name": "Polish system and specification",
+     "whatToCheck": "Type (PU, melamine, lacquer or other), number of coats, finish (matt, semi-gloss or gloss) against the specification or approved sample.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Builder records, specification",
+     "section": "Polishing (doors, frames and other wooden elements)",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.19",
+     "name": "Polish coverage and uniformity",
+     "whatToCheck": "Patchy or blotchy polish, missed areas, uneven sheen, dull or glossy patches.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Raking-light torch, daylight",
+     "section": "Polishing (doors, frames and other wooden elements)",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.20",
+     "name": "Brush marks and streaks",
+     "whatToCheck": "Visible brush strokes, streaks, lap marks, marks against the grain.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Raking-light torch",
+     "section": "Polishing (doors, frames and other wooden elements)",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.21",
+     "name": "Runs, drips and sags",
+     "whatToCheck": "Thick polish runs, drip beads at edges and mouldings, pooling in panel corners.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Raking-light torch",
+     "section": "Polishing (doors, frames and other wooden elements)",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.22",
+     "name": "Bubbles, pinholes and orange peel",
+     "whatToCheck": "Air bubbles, pinholes, rough or orange-peel texture.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Raking-light torch",
+     "section": "Polishing (doors, frames and other wooden elements)",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.23",
+     "name": "Grain and surface defects",
+     "whatToCheck": "Raised grain, rough or unsanded surface, sanding scratches, visible filler patches, dust or fibres trapped in the polish.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Raking-light torch",
+     "section": "Polishing (doors, frames and other wooden elements)",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.24",
+     "name": "Shade and colour mismatch",
+     "whatToCheck": "Shutter against frame, door against door, one face against the other, or different from the approved sample.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Approved sample, daylight",
+     "section": "Polishing (doors, frames and other wooden elements)",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.25",
+     "name": "Edges and hidden faces",
+     "whatToCheck": "Unpolished or poorly polished top, bottom, lock-side and hinge-side edges, back of the door, frame returns and rebates.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, inspection mirror",
+     "section": "Polishing (doors, frames and other wooden elements)",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.26",
+     "name": "Polish damage and stains",
+     "whatToCheck": "Rubbed-through spots, burn or heat marks, water rings, stains, discolouration.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": "Polishing (doors, frames and other wooden elements)",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.27",
+     "name": "Tacky or uncured polish",
+     "whatToCheck": "Sticky or soft film, finger marks, dust sticking to the surface, strong odour.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Touch test",
+     "section": "Polishing (doors, frames and other wooden elements)",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "8.28",
+     "name": "Polish on hardware, glass and adjacent surfaces",
+     "whatToCheck": "Polish splashes on hinges, locks, handles, glass, walls, tiles and floors.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, camera",
+     "section": "Polishing (doors, frames and other wooden elements)",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 9,
+   "name": "Doors",
+   "group": "Openings and metalwork",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "S",
+    "F"
+   ],
+   "conditionalRoomTypes": [
+    "K",
+    "U"
+   ],
+   "appliesTo": "Main door and all internal swing doors (bedrooms, bathrooms, kitchen, store, maid room, utility). Glazed sliding and balcony doors are under Category 13",
+   "tools": "Feeler gauge, spirit level, plumb bob, torch, steel tape",
+   "commonFindings": [
+    "Edge damage on shutters",
+    "play after closing",
+    "tower bolts not smooth",
+    "stoppers loose or not fixed",
+    "cracks on beading and door frames",
+    "loose locksets",
+    "scratches"
+   ],
+   "parameters": [
+    {
+     "ref": "9.1",
+     "name": "Main door",
+     "whatToCheck": "Material, thickness, size, finish; shutter condition; alignment; frame fixing; gap uniformity; weather seal; peephole; closer, chain, latch and number plate if provided.",
+     "checkType": "Verify + Visual + Operate",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Steel tape, feeler gauge",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "9.2",
+     "name": "Internal door shutters",
+     "whatToCheck": "Flush or panel, edges, laminate, veneer or paint, swelling, warping, edge damage, delamination.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "9.3",
+     "name": "Door frames",
+     "whatToCheck": "Plumb, level and square, fixing to the wall, gaps between frame and wall, cracks, edge damage, beading cracks, frame paint or polish.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Plumb bob, spirit level, feeler gauge",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "9.4",
+     "name": "Alignment and gaps",
+     "whatToCheck": "Uniform gaps at top, sides and bottom, rubbing, binding, sag, clearance above floor, closing without lifting, drifting open on its own.",
+     "checkType": "Operate + Measure",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Feeler gauge, spirit level",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "9.5",
+     "name": "Hinges",
+     "whatToCheck": "Number, type, screws, smooth operation, squeaking.",
+     "checkType": "Operate",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Visual, manual operation",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "9.6",
+     "name": "Locks, handles and latches",
+     "whatToCheck": "Type, function, latch and strike plate alignment, loose locksets and handles, key sets and master key.",
+     "checkType": "Operate",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "9.7",
+     "name": "Stoppers, tower bolts, aldrops, chain",
+     "whatToCheck": "Fixing and smooth function; stopper buttons fixed.",
+     "checkType": "Operate",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "9.8",
+     "name": "Play after closing",
+     "whatToCheck": "Rattling or slack in a closed shutter.",
+     "checkType": "Operate",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual push",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "9.9",
+     "name": "Bathroom and utility doors",
+     "whatToCheck": "Water-resistant material, sealed bottom edge, privacy latch, louvres or vent if provided.",
+     "checkType": "Visual + Verify",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Visual",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "9.10",
+     "name": "Door finish",
+     "whatToCheck": "Scratches, dents, edge damage, delamination, swelling. (Polish and paint defects: Category 8.)",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "9.11",
+     "name": "Frame treatment and rating",
+     "whatToCheck": "Termite treatment evidence for wood frames; fire rating of main door if specified.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Builder records, markings",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "S",
+      "F"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 10,
+   "name": "Windows",
+   "group": "Openings and metalwork",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S"
+   ],
+   "conditionalRoomTypes": [
+    "S"
+   ],
+   "appliesTo": "All windows, ventilators, and glazed balcony or sliding doors",
+   "tools": "Water hose or spray bottle, glass thickness gauge, feeler gauge, spirit level, torch",
+   "commonFindings": [
+    "Paint stains on glass",
+    "sealant not applied properly",
+    "rubber gasket not fixed",
+    "play after closing",
+    "stains on glass",
+    "blocked drainage channels",
+    "missing screw caps"
+   ],
+   "parameters": [
+    {
+     "ref": "10.1",
+     "name": "Frame and profile",
+     "whatToCheck": "Material, brand, section thickness, finish, scratches, dents, corner joints, warping, plumb, level and square, fixing to wall.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Caliper, spirit level, plumb bob",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "10.2",
+     "name": "Glass",
+     "whatToCheck": "Type, thickness, scratches, chips, cracks, edge condition, stickers, glazing beads secure, glazing gasket, distortion.",
+     "checkType": "Visual + Verify",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Glass thickness gauge, torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "10.3",
+     "name": "Operation",
+     "whatToCheck": "Sliding, casement or tilt operation: smooth, no jamming, closes fully, stays open, rollers, tracks, friction stays.",
+     "checkType": "Operate",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "10.4",
+     "name": "Locks and hardware",
+     "whatToCheck": "Handles, latches, multi-point locks, loose fittings, missing screw caps, rollers.",
+     "checkType": "Operate",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "10.5",
+     "name": "Gaps, play and alignment",
+     "whatToCheck": "Shutter-to-frame gaps, play after closing, rattling, interlock overlap.",
+     "checkType": "Operate + Measure",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Feeler gauge",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "10.6",
+     "name": "Gaskets and weather seals",
+     "whatToCheck": "Fixed and continuous, no cuts, brush seal pile, gaskets not fixed.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "10.7",
+     "name": "Sealant and perimeter joints",
+     "whatToCheck": "Continuity, width, adhesion, gaps between frame and wall, neatness, sill sealing, inside and outside.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "10.8",
+     "name": "Drainage channels and weep holes",
+     "whatToCheck": "Present, not blocked by mortar or paint, sill slope.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, small water pour",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "10.9",
+     "name": "Water leakage test",
+     "whatToCheck": "Hose or spray on the exterior face; check inside sill and corners for water entry.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Water hose or spray, torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "10.10",
+     "name": "Ventilators and louvres",
+     "whatToCheck": "Operation, fixing, insect screen, exhaust-fan opening.",
+     "checkType": "Visual + Operate",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "10.11",
+     "name": "Glazed balcony and sliding doors",
+     "whatToCheck": "Track, rollers, locking, glass, gasket, threshold slope and water entry, handle height.",
+     "checkType": "Operate + Test",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation, water pour",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "10.12",
+     "name": "Window safety",
+     "whatToCheck": "Toughened or laminated glass at low level, restrictors, opening limiters.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Markings on glass, visual",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "10.13",
+     "name": "Air tightness (optional)",
+     "whatToCheck": "Draught and whistle at closed windows.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Smoke pencil",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 11,
+   "name": "Metalwork (railings and grills)",
+   "group": "Openings and metalwork",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S"
+   ],
+   "conditionalRoomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "S"
+   ],
+   "appliesTo": "Balcony railings, window grills, AC ledge grills and louvres, safety grills, other metal fabrications inside the flat",
+   "tools": "Steel tape, spirit level, torch, caliper, SS test kit",
+   "commonFindings": [
+    "Railing height below the plan or code",
+    "loose posts",
+    "rust at welds",
+    "sharp edges",
+    "wide baluster gaps",
+    "missing finish coat"
+   ],
+   "parameters": [
+    {
+     "ref": "11.1",
+     "name": "Balcony railings",
+     "whatToCheck": "Material (SS grade, MS, glass, aluminium), thickness, finish, baluster spacing (child-safe gap), top handrail, base fixing.",
+     "checkType": "Measure + Visual",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Steel tape, caliper",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "11.2",
+     "name": "Fixing strength",
+     "whatToCheck": "Base plates, anchor bolts, post stability, glass clamps and spigots, handrail joints.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Manual push and shake test",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "11.3",
+     "name": "Welds and joints",
+     "whatToCheck": "Weld quality, grinding, sharp edges, burrs, gaps, rust at joints.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "11.4",
+     "name": "Corrosion protection",
+     "whatToCheck": "Paint, powder coat, galvanising or SS finish; rust spots, coating chips.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, SS test kit",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "11.5",
+     "name": "Window grills",
+     "whatToCheck": "Fixing, spacing, finish, rust.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "11.6",
+     "name": "AC ledge grills and louvres",
+     "whatToCheck": "Fixing, finish, spacing, maintenance access.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "11.7",
+     "name": "Other metal items",
+     "whatToCheck": "Gates, access hatches and ladders if present.",
+     "checkType": "Visual + Operate",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "11.8",
+     "name": "Glass railings",
+     "whatToCheck": "Toughened or laminated type, thickness, edge finish, gaps.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Glass thickness gauge",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "11.9",
+     "name": "Gaps and clearances",
+     "whatToCheck": "Gap between railing and slab or parapet, toe-board gap.",
+     "checkType": "Measure",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Steel rule",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "11.10",
+     "name": "Alignment",
+     "whatToCheck": "Straightness, level and plumb of railings.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Spirit level",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 12,
+   "name": "Electrical",
+   "group": "Building services",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S",
+    "F"
+   ],
+   "conditionalRoomTypes": [
+    "B",
+    "S"
+   ],
+   "appliesTo": "Distribution board, every room and wet area, balconies, AC points, low-voltage points",
+   "tools": "Multimeter, socket polarity tester, RCD tester, earth resistance tester, continuity tester, insulation resistance tester, clamp meter, load tester, thermal camera, torch, LAN cable tester, tone tracer",
+   "commonFindings": [
+    "Missing or loose cover plates",
+    "wrong switching",
+    "reversed polarity",
+    "loose DB wiring",
+    "unlabelled circuits",
+    "poor earthing",
+    "undersized wire",
+    "switch boxes out of alignment. TV or data points without cable",
+    "intercom not working",
+    "no pull wires in conduits"
+   ],
+   "parameters": [
+    {
+     "ref": "12.1",
+     "name": "Distribution board (DB)",
+     "whatToCheck": "Location and accessibility, enclosure, number of ways, circuit labelling, spare ways, neutral and earth bars, wiring neatness, knockouts and glands, cover, door fit, clearance.",
+     "checkType": "Visual + Verify",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, DB schedule",
+     "section": "Power and protection",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.2",
+     "name": "MCB check",
+     "whatToCheck": "MCB present on every circuit (lighting, power, AC, kitchen, geyser, washing machine); rating and type (curve) matching the load and wire gauge; ON and OFF action and latching; loose, hot or discoloured MCBs; MCB not tripping under overload; labelling not matching the circuit; no spare ways; doubtful or unmarked make.",
+     "checkType": "Verify + Test",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Multimeter, clamp meter, load tester, DB schedule",
+     "section": "Power and protection",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.3",
+     "name": "RCCB / ELCB check",
+     "whatToCheck": "RCCB or ELCB rating and sensitivity, trip test with the test button and a tester, isolators, surge protection if provided, nuisance tripping, loose terminations.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "RCD tester, test button, multimeter",
+     "section": "Power and protection",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.4",
+     "name": "Incoming supply and meter",
+     "whatToCheck": "Meter installed, main switch, voltage, phase, polarity, sanctioned load, supply status.",
+     "checkType": "Verify + Test",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Multimeter, phase sequence indicator",
+     "section": "Power and protection",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.5",
+     "name": "Wiring",
+     "whatToCheck": "Wire brand and gauge per circuit (lighting, power, AC, kitchen), colour coding, FRLS grade, concealed in conduit, joints only in junction boxes.",
+     "checkType": "Verify + Visual",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Cable print, caliper or gauge, torch",
+     "section": "Power and protection",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.6",
+     "name": "Conduits and routing",
+     "whatToCheck": "Concealed routing, conduit size, cover, exposed conduits, conduits through beams.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": "Power and protection",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.7",
+     "name": "Switchboards and boxes",
+     "whatToCheck": "Alignment (level and plumb), flush with wall, box depth, cover plates, loose boxes, cracks, height from floor.",
+     "checkType": "Measure + Visual",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Spirit level, steel tape",
+     "section": "Power and protection",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.8",
+     "name": "Switchboard positioning",
+     "whatToCheck": "Height from the floor and consistency between boards in the same room; distance from the door frame and door swing; position against the bed head, wardrobe, TV unit, modular kitchen and mirror; position against tile joints and cut tiles; sockets above the kitchen platform; distance from sink, shower, basin and hob; switch on the wrong side of the door; clash with niches, beams and false-ceiling lines; mismatch with the electrical layout drawing.",
+     "checkType": "Measure + Verify",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Steel tape, laser level, electrical layout drawing",
+     "section": "Power and protection",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.9",
+     "name": "Switches and sockets",
+     "whatToCheck": "Correct switching, loose or burnt fittings, sparking, polarity (L-N-E), earthing at socket, grip, shutters, 6A and 16A types.",
+     "checkType": "Test + Operate",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Socket polarity tester, multimeter",
+     "section": "Power and protection",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.10",
+     "name": "Lighting and fan points",
+     "whatToCheck": "Location, fan hook or box, regulators, IP-rated fittings in wet zones.",
+     "checkType": "Verify + Operate",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual, multimeter",
+     "section": "Power and protection",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.11",
+     "name": "AC points",
+     "whatToCheck": "Dedicated circuits, MCB rating, isolator or socket, wire gauge, indoor and outdoor locations.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Multimeter, clamp meter",
+     "section": "Power and protection",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.12",
+     "name": "Earthing",
+     "whatToCheck": "Earth pit and continuity, earth wire sizes, DB earthing, metal boxes, geyser, AC and socket earthing, earth resistance, neutral-earth bonding.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Earth resistance tester, continuity tester",
+     "section": "Earthing and testing",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.13",
+     "name": "Insulation resistance",
+     "whatToCheck": "Insulation resistance of each circuit.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Insulation resistance tester",
+     "section": "Earthing and testing",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.14",
+     "name": "Voltage and phase",
+     "whatToCheck": "Voltage at the DB and at points, phase sequence, voltage drop under load.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Multimeter, phase sequence indicator",
+     "section": "Earthing and testing",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.15",
+     "name": "Reverse polarity / reverse current check",
+     "whatToCheck": "Live and neutral reversed at sockets, switches, light points, DB and incoming supply; switch breaking the neutral instead of the live; live present at a fitting with the switch off; line and load reversed on an MCB or RCCB (reverse feeding); earth and neutral swapped; RCCB failing to trip or tripping wrongly with reversed connections.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Socket polarity tester, multimeter, RCD tester",
+     "section": "Earthing and testing",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.16",
+     "name": "Load and trip test",
+     "whatToCheck": "Circuit load test under real load, MCB trip behaviour, heating at connections, voltage under load.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Load tester, clamp meter, thermal camera",
+     "section": "Earthing and testing",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.17",
+     "name": "Exposed wires and hot spots",
+     "whatToCheck": "Loose terminations, burn marks, exposed conductors, hot spots.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Thermal camera, torch",
+     "section": "Earthing and testing",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.18",
+     "name": "TV points",
+     "whatToCheck": "Location, conduit, cable presence, faceplate, signal.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Cable tester, tone tracer",
+     "section": "Low-voltage and communication",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.19",
+     "name": "Data and telephone points",
+     "whatToCheck": "RJ45 and cable type, conduit, faceplate, continuity.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "LAN cable tester",
+     "section": "Low-voltage and communication",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.20",
+     "name": "Intercom and video door phone",
+     "whatToCheck": "Indoor unit, door station, wiring, audio and video, door release.",
+     "checkType": "Operate",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation",
+     "section": "Low-voltage and communication",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.21",
+     "name": "Doorbell",
+     "whatToCheck": "Switch, chime, function.",
+     "checkType": "Operate",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation",
+     "section": "Low-voltage and communication",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.22",
+     "name": "Security and CCTV provisions",
+     "whatToCheck": "Conduits, cables and power outlets for CCTV, alarms or sensors.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual, tone tracer",
+     "section": "Low-voltage and communication",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.23",
+     "name": "Automation provisions",
+     "whatToCheck": "Smart-home conduits or devices if provided.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual",
+     "section": "Low-voltage and communication",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.24",
+     "name": "Internet entry and spare conduits",
+     "whatToCheck": "Fibre or cable entry to the flat, spare conduits, pull wires.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual",
+     "section": "Low-voltage and communication",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.25",
+     "name": "Routing and labelling",
+     "whatToCheck": "Separation from power cables, labelling.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": "Low-voltage and communication",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "12.26",
+     "name": "Digital lock and access control",
+     "whatToCheck": "Function if provided.",
+     "checkType": "Operate",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation",
+     "section": "Low-voltage and communication",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 13,
+   "name": "Plumbing",
+   "group": "Building services",
+   "roomTypes": [
+    "K",
+    "U",
+    "W",
+    "B",
+    "F"
+   ],
+   "conditionalRoomTypes": [
+    "B"
+   ],
+   "appliesTo": "Bathrooms, toilets, kitchen, utility, balconies, geyser and appliance points",
+   "tools": "Pressure test pump with gauge, pressure gauge with hose adapter, flow jug or flow meter, TDS meter, torch",
+   "commonFindings": [
+    "Low pressure at upper fixtures",
+    "weeping joints under basins",
+    "reversed hot and cold",
+    "missing angle cocks",
+    "loose taps",
+    "slow leaks revealed only after minutes of use"
+   ],
+   "parameters": [
+    {
+     "ref": "13.1",
+     "name": "Pressure test",
+     "whatToCheck": "Hydrostatic test of concealed lines: hold, pressure drop, leak points.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Test pump with pressure gauge",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "F"
+     ]
+    },
+    {
+     "ref": "13.2",
+     "name": "Water pressure and flow",
+     "whatToCheck": "Pressure and flow at each tap and shower, hot and cold.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Pressure gauge, flow jug or flow meter",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "F"
+     ]
+    },
+    {
+     "ref": "13.3",
+     "name": "Hot and cold lines",
+     "whatToCheck": "Hot and cold reversed at taps and mixers, no hot water at hot points, hot line routing and insulation, mixer function.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Manual operation, thermometer",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "F"
+     ]
+    },
+    {
+     "ref": "13.4",
+     "name": "Valves and isolation",
+     "whatToCheck": "Main isolation valve, bathroom and kitchen isolation, angle cocks: accessible, smooth, no leaks.",
+     "checkType": "Operate",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "F"
+     ]
+    },
+    {
+     "ref": "13.5",
+     "name": "Fixture connections",
+     "whatToCheck": "Taps, mixers, showers, health faucet, flush tanks, concealed cisterns, flexible hoses: leaks, tightness, alignment, flow.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, tissue test for leaks",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "F"
+     ]
+    },
+    {
+     "ref": "13.6",
+     "name": "Water quality indicators (optional)",
+     "whatToCheck": "Colour, odour, debris, TDS at taps.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "TDS meter",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "F"
+     ]
+    },
+    {
+     "ref": "13.7",
+     "name": "Leakage checks",
+     "whatToCheck": "Joints at fixtures, wet marks under basins and behind WCs, main meter movement with all outlets closed.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Torch, tissue, meter observation",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "F"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 14,
+   "name": "Drainage",
+   "group": "Building services",
+   "roomTypes": [
+    "K",
+    "U",
+    "W",
+    "B",
+    "S"
+   ],
+   "conditionalRoomTypes": [
+    "S"
+   ],
+   "appliesTo": "Bathrooms, toilets, kitchen, utility, balconies, AC drain points",
+   "tools": "Water buckets, stopwatch, torch, smoke test kit (optional)",
+   "commonFindings": [
+    "Gap between trap and PVC pipe (very frequent)",
+    "grouting gaps around the trap",
+    "slow drainage",
+    "construction debris in traps",
+    "balcony drain slope inadequate"
+   ],
+   "parameters": [
+    {
+     "ref": "14.1",
+     "name": "Floor traps and drains",
+     "whatToCheck": "Position, lowest point, grating fixed, water seal depth, cockroach trap, gap between trap and PVC pipe, grouting around the trap.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, water jug",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "14.2",
+     "name": "Waste lines",
+     "whatToCheck": "Slope, material, fixing.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Water flow, visual",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "14.3",
+     "name": "Flow tests",
+     "whatToCheck": "Pour or flush test: time to drain, backflow, gurgling, stagnation; check ceilings of the floor below if accessible.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Buckets, stopwatch, torch",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "14.4",
+     "name": "Blockage check",
+     "whatToCheck": "Debris, cement and construction waste in traps and lines.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Water flow, torch",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "14.5",
+     "name": "Vent and stack pipes",
+     "whatToCheck": "Presence, terminations, anti-siphon arrangements.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "14.6",
+     "name": "WC connections",
+     "whatToCheck": "Pan outlet connection, trap type, flange.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "14.7",
+     "name": "Soil and sullage separation",
+     "whatToCheck": "Correct separation of lines.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "14.8",
+     "name": "Balcony and AC drains",
+     "whatToCheck": "Outlet size, slope, covers, discharge location (not onto lower flats).",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Water pour test",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "14.9",
+     "name": "Odour and air leakage",
+     "whatToCheck": "Smell test; smoke test where doubtful.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Smoke test kit (optional)",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 15,
+   "name": "Gas pipeline",
+   "group": "Building services",
+   "roomTypes": [
+    "K",
+    "F"
+   ],
+   "conditionalRoomTypes": [
+    "F"
+   ],
+   "appliesTo": "Kitchen and any other gas point, applicable only where piped gas is provisioned",
+   "tools": "Gas leak detector, soap solution, manometer, steel tape",
+   "commonFindings": [
+    "Unsealed or uncapped points",
+    "gas point too close to electrical socket",
+    "no ventilation near the point"
+   ],
+   "parameters": [
+    {
+     "ref": "15.1",
+     "name": "Provision and route",
+     "whatToCheck": "Point location in kitchen, concealed or exposed route, protective sleeve.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual, plan",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "F"
+     ]
+    },
+    {
+     "ref": "15.2",
+     "name": "Material and joints",
+     "whatToCheck": "GI, copper or flexible pipe, joint tightness, corrosion.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "F"
+     ]
+    },
+    {
+     "ref": "15.3",
+     "name": "Leak test",
+     "whatToCheck": "Soap-solution test, gas leak detector, pressure drop test.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Gas leak detector, soap solution, manometer",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "F"
+     ]
+    },
+    {
+     "ref": "15.4",
+     "name": "Valves and regulators",
+     "whatToCheck": "Isolation valve, meter, regulator: accessible and functional.",
+     "checkType": "Operate",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "F"
+     ]
+    },
+    {
+     "ref": "15.5",
+     "name": "Clearances",
+     "whatToCheck": "Distance from electrical points and hob.",
+     "checkType": "Measure",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Steel tape",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "F"
+     ]
+    },
+    {
+     "ref": "15.6",
+     "name": "Ventilation near gas points",
+     "whatToCheck": "Openings or exhaust to disperse gas.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Visual",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "F"
+     ]
+    },
+    {
+     "ref": "15.7",
+     "name": "Commissioning evidence",
+     "whatToCheck": "Test or commissioning certificate from the gas provider.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Builder or provider records",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "F"
+     ]
+    },
+    {
+     "ref": "15.8",
+     "name": "Marking and caps",
+     "whatToCheck": "Labels, protective caps on unused points.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Visual",
+     "section": null,
+     "roomTypes": [
+      "K",
+      "F"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 16,
+   "name": "AC, geyser and exhaust provisions",
+   "group": "Building services",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S"
+   ],
+   "conditionalRoomTypes": [
+    "U",
+    "B",
+    "S"
+   ],
+   "appliesTo": "Bedrooms, living areas, kitchen, washrooms, utility, balconies and AC unit area",
+   "tools": "Steel tape, caliper, anemometer, smoke pencil, pressure test pump, multimeter, torch",
+   "commonFindings": [
+    "AC drain with no slope",
+    "sleeves unsealed",
+    "refrigerant tubing crushed or uninsulated",
+    "outdoor space too tight for service",
+    "exhaust opening blocked or missing",
+    "no hot line or power point at the geyser position"
+   ],
+   "parameters": [
+    {
+     "ref": "16.1",
+     "name": "AC provisions per room",
+     "whatToCheck": "Indoor unit location, outdoor unit location, copper pipe sleeves, drain pipe, power point.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual, plan",
+     "section": "AC provisions",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "16.2",
+     "name": "AC sleeves",
+     "whatToCheck": "Sleeve size, slope toward the outside, sealing, capping, gaps between sleeve and wall, sleeves through beams or slabs.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": "AC provisions",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "16.3",
+     "name": "Copper tubing provision",
+     "whatToCheck": "Refrigerant copper tubing (liquid and gas lines) provided or sleeve-only as promised; tubing size and thickness; route from indoor to outdoor unit within the permitted run length; kinks, crushed or flattened sections, sharp bends; insulation missing, thin or broken; both ends capped and tagged; joints and brazing; pressure or nitrogen test record if done; control cable conduit; tubing damaged or cut during plastering or tiling.",
+     "checkType": "Verify + Visual",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Torch, steel tape, caliper",
+     "section": "AC provisions",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "16.4",
+     "name": "AC condensate drain",
+     "whatToCheck": "Slope and outlet; test with water.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Water pour",
+     "section": "AC provisions",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "16.5",
+     "name": "Outdoor unit space",
+     "whatToCheck": "Ledge dimensions, clearance, support, grill or louvre, maintenance access.",
+     "checkType": "Measure",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Steel tape",
+     "section": "AC provisions",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "16.6",
+     "name": "Multi-split or VRV provision",
+     "whatToCheck": "If specified, pipe routes and outdoor unit space.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Plan, visual",
+     "section": "AC provisions",
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S"
+     ]
+    },
+    {
+     "ref": "16.7",
+     "name": "Exhaust fan provision",
+     "whatToCheck": "Opening size and position, duct and termination to the outside, back-draught shutter, power point and switch, fan fitted if provided, blocked or capped openings, noise and vibration.",
+     "checkType": "Verify + Operate",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Steel tape, visual",
+     "section": "Exhaust and ventilation",
+     "roomTypes": [
+      "K",
+      "W",
+      "U"
+     ]
+    },
+    {
+     "ref": "16.8",
+     "name": "Kitchen chimney provision",
+     "whatToCheck": "Duct route, power point, height, termination.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Steel tape, visual",
+     "section": "Exhaust and ventilation",
+     "roomTypes": [
+      "K",
+      "W",
+      "U"
+     ]
+    },
+    {
+     "ref": "16.9",
+     "name": "Ventilators",
+     "whatToCheck": "Location, size, louvres.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Visual",
+     "section": "Exhaust and ventilation",
+     "roomTypes": [
+      "K",
+      "W",
+      "U"
+     ]
+    },
+    {
+     "ref": "16.10",
+     "name": "Airflow check",
+     "whatToCheck": "Exhaust performance and airflow direction.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Anemometer, smoke pencil",
+     "section": "Exhaust and ventilation",
+     "roomTypes": [
+      "K",
+      "W",
+      "U"
+     ]
+    },
+    {
+     "ref": "16.11",
+     "name": "Geyser location and mounting",
+     "whatToCheck": "Wall strength and fixing provision, clearance and access for servicing, space for the capacity promised, distance from the shower and splash zone, headroom, missing bracket or blocking.",
+     "checkType": "Verify + Measure",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Steel tape, torch",
+     "section": "Geyser provision",
+     "roomTypes": [
+      "W",
+      "K"
+     ]
+    },
+    {
+     "ref": "16.12",
+     "name": "Geyser plumbing provision",
+     "whatToCheck": "Hot and cold inlet and outlet at the geyser position, isolation valve, non-return and safety valve provision, hot-water-grade pipe (CPVC or PPR), leaks at joints, inlet and outlet connected the wrong way, drain or overflow provision, hot line reaching the shower, basin or sink points.",
+     "checkType": "Verify + Test",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Pressure test pump, torch, manual operation",
+     "section": "Geyser provision",
+     "roomTypes": [
+      "W",
+      "K"
+     ]
+    },
+    {
+     "ref": "16.13",
+     "name": "Geyser electrical provision",
+     "whatToCheck": "Dedicated socket or switch with indicator, MCB rating and wire gauge for the load, earthing, point height and distance from water, IP rating, switch location, loose or burnt terminals.",
+     "checkType": "Verify + Test",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Multimeter, steel tape",
+     "section": "Geyser provision",
+     "roomTypes": [
+      "W",
+      "K"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 17,
+   "name": "Kitchen",
+   "group": "Spaces and zones",
+   "roomTypes": [
+    "K",
+    "U"
+   ],
+   "conditionalRoomTypes": [],
+   "appliesTo": "Kitchen and utility area",
+   "tools": "Steel tape, spirit level, torch, water jug",
+   "commonFindings": [
+    "Paint stains on the window glass",
+    "platform not level",
+    "sealant missing at the platform-wall joint",
+    "cabinet shutters misaligned",
+    "points at the wrong height",
+    "washing machine point without tap or standpipe"
+   ],
+   "parameters": [
+    {
+     "ref": "17.1",
+     "name": "Platform structure",
+     "whatToCheck": "Size, support and brackets, level, slab or masonry base. (Stone finish: Category 7.)",
+     "checkType": "Measure + Test",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Steel tape, spirit level, manual push test",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "17.2",
+     "name": "Sink and cut-out",
+     "whatToCheck": "Fit, sealing, waste coupling, overflow, tap hole.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Water pour, torch",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "17.3",
+     "name": "Sink function",
+     "whatToCheck": "Flow, leaks under the sink, drain speed.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Water flow, torch, tissue",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "17.4",
+     "name": "Modular cabinets (if provided)",
+     "whatToCheck": "Carcass material, shutter alignment, hinges, drawer channels, handles, shelves, edge banding, laminate finish, gaps, soft-close, wall fixing, sealing near sink.",
+     "checkType": "Visual + Operate",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Spirit level, manual operation",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "17.5",
+     "name": "Hob and chimney (if provided)",
+     "whatToCheck": "Fit, burners, ignition, gas connection, chimney fit, ducting, filters, suction.",
+     "checkType": "Operate",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "17.6",
+     "name": "Clearances and appliance niches",
+     "whatToCheck": "Platform height, work clearances, niches for fridge, dishwasher and microwave, points at correct locations.",
+     "checkType": "Measure + Verify",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Steel tape",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "17.7",
+     "name": "Storage and shelves",
+     "whatToCheck": "Provisions as specified.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "17.8",
+     "name": "Fire and gas safety",
+     "whatToCheck": "Gas leak detector provision, non-combustible finish near the hob, exhaust.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "17.9",
+     "name": "Waste and traps",
+     "whatToCheck": "Sink waste, garbage disposer provision.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": "Kitchen",
+     "roomTypes": [
+      "K"
+     ]
+    },
+    {
+     "ref": "17.10",
+     "name": "Utility water inlet points",
+     "whatToCheck": "Washing machine, dishwasher and RO inlets: location, tap or valve, height, hot and cold, capped when unused, leaks, no flow.",
+     "checkType": "Verify + Test",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual, manual operation",
+     "section": "Utility area and appliance points",
+     "roomTypes": [
+      "U",
+      "K"
+     ]
+    },
+    {
+     "ref": "17.11",
+     "name": "Utility drain points",
+     "whatToCheck": "Washing machine and sink outlets: standpipe, trap, connection, gaps at the standpipe or pipe, slow drain, backflow, standpipe height.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, water jug",
+     "section": "Utility area and appliance points",
+     "roomTypes": [
+      "U",
+      "K"
+     ]
+    },
+    {
+     "ref": "17.12",
+     "name": "Appliance electrical points",
+     "whatToCheck": "Hob, chimney, fridge, microwave, dishwasher, washing machine and RO points: ratings, heights, distance from water, dedicated circuits, socket type and earthing.",
+     "checkType": "Verify + Test",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Multimeter, steel tape",
+     "section": "Utility area and appliance points",
+     "roomTypes": [
+      "U",
+      "K"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 18,
+   "name": "Bathrooms",
+   "group": "Spaces and zones",
+   "roomTypes": [
+    "W"
+   ],
+   "conditionalRoomTypes": [],
+   "appliesTo": "Bathrooms, toilets, common bathroom, maid bathroom",
+   "tools": "Spirit level, torch, water jug, tissue, steel tape",
+   "commonFindings": [
+    "Missing screw caps",
+    "sealant not applied properly",
+    "grouting gaps around the trap",
+    "stains on glass",
+    "dents on granite counter",
+    "tower bolt not operating smoothly"
+   ],
+   "parameters": [
+    {
+     "ref": "18.1",
+     "name": "Sanitaryware",
+     "whatToCheck": "WC type, fixing, level and wobble test, seat and cover; wash basin fixing, level, overflow, drain; shower, health faucet; cracks, chips, scratches.",
+     "checkType": "Visual + Operate + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Spirit level, manual push, water jug",
+     "section": null,
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "18.2",
+     "name": "CP fittings",
+     "whatToCheck": "Taps, mixers, diverters, hot and cold orientation, flow, finish, missing screw caps, loose handles, leaks.",
+     "checkType": "Operate",
+     "primaryType": "Operate",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Manual operation, tissue test",
+     "section": null,
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "18.3",
+     "name": "Flush system",
+     "whatToCheck": "Dual flush, fill time, leaks, running water, water level, access panel.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Manual operation, stopwatch",
+     "section": null,
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "18.4",
+     "name": "Shower zone",
+     "whatToCheck": "Enclosure or partition, curb, floor slope, drain, hot and cold mixing, water spread outside the zone, screen sealing.",
+     "checkType": "Test + Visual",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Water jug, spirit level",
+     "section": null,
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "18.5",
+     "name": "Counters and vanity (if provided)",
+     "whatToCheck": "Vanity unit, cut-outs and fixing. (Stone finish: Category 7.)",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "18.6",
+     "name": "Niches and shelves",
+     "whatToCheck": "Neat finish and slope to drain.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Spirit level",
+     "section": null,
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "18.7",
+     "name": "Ceiling and access panel",
+     "whatToCheck": "Ceiling finish and access panel for services.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "18.8",
+     "name": "Wet-zone electrical safety",
+     "whatToCheck": "IP-rated fittings, switch outside the shower zone, geyser socket position. (Tests: Category 12.)",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "18.9",
+     "name": "Odour and hygiene",
+     "whatToCheck": "Drain odours, residue on fixtures.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Smell test",
+     "section": null,
+     "roomTypes": [
+      "W"
+     ]
+    },
+    {
+     "ref": "18.10",
+     "name": "Cross-category checks in this room",
+     "whatToCheck": "Also inspect under Categories 4, 5, 6, 7, 9, 10, 12, 13, 14 and 16.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Inspection app link",
+     "section": null,
+     "roomTypes": [
+      "W"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 19,
+   "name": "Balcony",
+   "group": "Spaces and zones",
+   "roomTypes": [
+    "B"
+   ],
+   "conditionalRoomTypes": [],
+   "appliesTo": "All balconies, utility balconies, maid balcony and AC ledge",
+   "tools": "Water jug, spirit level, steel tape, moisture meter, torch",
+   "commonFindings": [
+    "Water stagnation at corners",
+    "inadequate slope",
+    "grouting gaps between tiles and skirting",
+    "gaps around the trap",
+    "paint stains on glass"
+   ],
+   "parameters": [
+    {
+     "ref": "19.1",
+     "name": "Floor finish and slope",
+     "whatToCheck": "Anti-skid finish, hollowness, slope away from the door, water stagnation after a pour, level at door threshold.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Water jug, spirit level",
+     "section": null,
+     "roomTypes": [
+      "B"
+     ]
+    },
+    {
+     "ref": "19.2",
+     "name": "Drainage outlets",
+     "whatToCheck": "Outlet position, grating, trap, discharge, blockages, overflow provision.",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Water pour test",
+     "section": null,
+     "roomTypes": [
+      "B"
+     ]
+    },
+    {
+     "ref": "19.3",
+     "name": "Parapet",
+     "whatToCheck": "Wall height, finish, cracks, coping. (Railing: Category 11.)",
+     "checkType": "Measure + Visual",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Steel tape, torch",
+     "section": null,
+     "roomTypes": [
+      "B"
+     ]
+    },
+    {
+     "ref": "19.4",
+     "name": "Slab edge",
+     "whatToCheck": "Nosing, drip groove, edge finish, cracks.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "B"
+     ]
+    },
+    {
+     "ref": "19.5",
+     "name": "Joints and sealing",
+     "whatToCheck": "Floor-wall, parapet-floor and door-sill joints, sealant.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, moisture meter",
+     "section": null,
+     "roomTypes": [
+      "B"
+     ]
+    },
+    {
+     "ref": "19.6",
+     "name": "Electrical",
+     "whatToCheck": "Balcony light, socket (IP rated), switch placement.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual, multimeter",
+     "section": null,
+     "roomTypes": [
+      "B"
+     ]
+    },
+    {
+     "ref": "19.7",
+     "name": "Plumbing points",
+     "whatToCheck": "Washing machine point, tap.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual, manual operation",
+     "section": null,
+     "roomTypes": [
+      "B"
+     ]
+    },
+    {
+     "ref": "19.8",
+     "name": "External wall finish",
+     "whatToCheck": "Paint, texture and cracks on balcony walls.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "B"
+     ]
+    },
+    {
+     "ref": "19.9",
+     "name": "Utility features",
+     "whatToCheck": "Drying area, planters, AC ledge.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Visual",
+     "section": null,
+     "roomTypes": [
+      "B"
+     ]
+    },
+    {
+     "ref": "19.10",
+     "name": "Cross-category checks in this room",
+     "whatToCheck": "Also inspect under Categories 4, 5, 8, 10, 11, 12, 13 and 14.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Inspection app link",
+     "section": null,
+     "roomTypes": [
+      "B"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 20,
+   "name": "Safety",
+   "group": "Safety and pest control",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S",
+    "F"
+   ],
+   "conditionalRoomTypes": [],
+   "appliesTo": "Whole flat; items cross-referenced to the category that holds the test",
+   "tools": "Torch, steel tape, multimeter, RCD tester, gas leak detector",
+   "commonFindings": [
+    "Missing shaft covers",
+    "sharp stone edges",
+    "uncapped points",
+    "railing gaps wide enough for children",
+    "DB obstructed"
+   ],
+   "parameters": [
+    {
+     "ref": "20.1",
+     "name": "Electrical safety",
+     "whatToCheck": "Exposed wires, loose terminations, missing cover plates, earthing integrity, RCCB protection, protection of wet-zone sockets. (Tests: Category 12.)",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, RCD tester",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "20.2",
+     "name": "Fall protection",
+     "whatToCheck": "Railing, parapet and window-sill heights and gaps, glass safety, window restrictors, balcony door locks. (Window safety: 10.12. Railing fixing: Category 11.)",
+     "checkType": "Measure + Visual",
+     "primaryType": "Measure",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Steel tape",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "20.3",
+     "name": "Gas safety",
+     "whatToCheck": "Leak test result, isolation valve, ventilation, hob safety. (Tests: Category 15.)",
+     "checkType": "Test",
+     "primaryType": "Test",
+     "extraInput": "number",
+     "unit": "",
+     "tool": "Gas leak detector",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "20.4",
+     "name": "Fire safety in the unit",
+     "whatToCheck": "Smoke detector or sprinkler heads fitted and unobstructed, escape route access, fire-rated door if specified.",
+     "checkType": "Verify + Operate",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Visual, test button",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "20.5",
+     "name": "Slip and trip hazards",
+     "whatToCheck": "Anti-skid in wet areas, level differences, loose tiles, protrusions, threshold height.",
+     "checkType": "Visual + Measure",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Steel rule",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "20.6",
+     "name": "Sharp edges and protrusions",
+     "whatToCheck": "Stone edges, grills, burrs, exposed screws, glass edges.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "20.7",
+     "name": "Structural safety signs",
+     "whatToCheck": "Wide or active cracks, spalling, exposed rebar.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "20.8",
+     "name": "Security",
+     "whatToCheck": "Main door lock, peephole, chain, window locks and grills, intercom function.",
+     "checkType": "Verify + Operate",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Manual operation",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "20.9",
+     "name": "Child and elder safety",
+     "whatToCheck": "Socket covers, door stoppers, grab-bar provision, balcony gaps.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Steel tape",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "20.10",
+     "name": "Construction hazards left behind",
+     "whatToCheck": "Exposed nails, open shaft covers, uncapped pipes, unfenced openings.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "20.11",
+     "name": "Emergency access",
+     "whatToCheck": "Shaft access doors, DB access, main water and gas isolation accessible.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Visual",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 21,
+   "name": "Pest and termite",
+   "group": "Safety and pest control",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S",
+    "F"
+   ],
+   "conditionalRoomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S"
+   ],
+   "appliesTo": "Wood elements, skirting, door frames, built-in provisions, shafts, drains",
+   "tools": "Torch, probe or screwdriver, moisture meter",
+   "commonFindings": [
+    "No treatment evidence",
+    "gaps around pipe sleeves",
+    "damp skirting zones",
+    "untreated wood frames"
+   ],
+   "parameters": [
+    {
+     "ref": "21.1",
+     "name": "Treatment evidence",
+     "whatToCheck": "Anti-termite pre-construction or post-construction treatment record (chemical, date, warranty), visible treatment holes.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Builder records, visual",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "21.2",
+     "name": "Termite signs",
+     "whatToCheck": "Mud tubes, wood damage, frass, hollow-sounding wood, swarmers, paint blisters near skirting.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, probe, tapping",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "21.3",
+     "name": "Wood and joinery",
+     "whatToCheck": "Door frames, wooden skirting, built-ins: treatment, moisture, bore holes.",
+     "checkType": "Visual + Test",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Moisture meter, probe",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "21.4",
+     "name": "Entry points",
+     "whatToCheck": "Gaps at pipe sleeves, cracks along skirting, conduit entries, shaft openings, drain traps.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "21.5",
+     "name": "Rodent, insect and cockroach points",
+     "whatToCheck": "Gaps around pipes and ducts, floor trap seals.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "21.6",
+     "name": "Bird and bee points",
+     "whatToCheck": "Roosting spots on balconies, ventilator gaps and mesh.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "21.7",
+     "name": "Conditions favouring pests",
+     "whatToCheck": "Damp areas and leaks. (Source: Category 4.)",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Moisture meter",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 22,
+   "name": "Cleanliness and handover condition",
+   "group": "Handover condition",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S",
+    "F"
+   ],
+   "conditionalRoomTypes": [],
+   "appliesTo": "Whole flat at the time of handover",
+   "tools": "Camera, torch, key tag list, tablet",
+   "commonFindings": [
+    "Cement splashes on tiles",
+    "protective film left on glass",
+    "incomplete key sets",
+    "debris in drains and shafts"
+   ],
+   "parameters": [
+    {
+     "ref": "22.1",
+     "name": "Cleanliness",
+     "whatToCheck": "Construction debris, dust, cement and plaster splashes, adhesive and grout residue on tiles, sticker and tape residue on glass and fixtures, stains on sanitaryware, polish residue. (Paint spills: 8.14.)",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch, camera",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "22.2",
+     "name": "Protective coverings",
+     "whatToCheck": "Protective film on glass, frames and fixtures, floor protection: removed or still in place, and condition.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Camera",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "22.3",
+     "name": "Debris and leftovers",
+     "whatToCheck": "Leftover materials, packaging, formwork bits, shaft debris.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Torch",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "22.4",
+     "name": "Keys and access devices",
+     "whatToCheck": "Number of key sets for main door, bedroom doors, bathrooms, store, balcony and windows; locks tagged; access cards, RFID tags and remotes.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Key tag list",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "22.5",
+     "name": "Utility readiness",
+     "whatToCheck": "Meter readings recorded for electricity, water and gas; supply on.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Meter photos",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "22.6",
+     "name": "Fixture condition at handover",
+     "whatToCheck": "No damaged or missing items.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Camera",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "22.7",
+     "name": "Snag list status",
+     "whatToCheck": "Each item recorded with ID, photo, location and severity; builder acknowledgment; timelines; open or closed status.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Inspection app",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "22.8",
+     "name": "Readiness for fit-out",
+     "whatToCheck": "Power and water available for contractors, access for interior works.",
+     "checkType": "Verify",
+     "primaryType": "Verify",
+     "extraInput": "text",
+     "unit": "",
+     "tool": "Multimeter, visual",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "22.9",
+     "name": "Baseline record",
+     "whatToCheck": "Whole-flat photo set or 360 capture as the as-delivered record.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Camera, 3D scanner (optional)",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 23,
+   "name": "General observations",
+   "group": "Handover condition",
+   "roomTypes": [
+    "H",
+    "K",
+    "U",
+    "W",
+    "B",
+    "S",
+    "F"
+   ],
+   "conditionalRoomTypes": [],
+   "appliesTo": "Catch-all for anything not covered in Categories 1 to 27",
+   "tools": "Camera, tablet with notes",
+   "commonFindings": [
+    "Used for observations outside the checklist",
+    "review regularly and convert recurring items into new checklist points"
+   ],
+   "parameters": [
+    {
+     "ref": "23.1",
+     "name": "Uncategorised defects",
+     "whatToCheck": "Any defect not fitting another category: description, location, photo and suggested category.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Camera",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "23.2",
+     "name": "Cross-trade and repeated patterns",
+     "whatToCheck": "Interface problems between trades and defects repeating across rooms.",
+     "checkType": "Visual",
+     "primaryType": "Visual",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Camera",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "23.3",
+     "name": "Limitations of the inspection",
+     "whatToCheck": "Areas not accessible or not inspected (locked rooms, sealed shafts, no power or water), instruments that could not be used.",
+     "checkType": "Record",
+     "primaryType": "Record",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Inspection app",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "23.4",
+     "name": "Conditions at inspection",
+     "whatToCheck": "Date, time, recent rain, temperature, humidity, power and water status.",
+     "checkType": "Record",
+     "primaryType": "Record",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Thermo-hygrometer, notes",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "23.5",
+     "name": "Overall assessment",
+     "whatToCheck": "Quality grade, red flags (structure, waterproofing, electrical) and need for specialist follow-up.",
+     "checkType": "Record",
+     "primaryType": "Record",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Inspection app",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    },
+    {
+     "ref": "23.6",
+     "name": "Priority recommendations",
+     "whatToCheck": "Critical items first, with suggested action.",
+     "checkType": "Record",
+     "primaryType": "Record",
+     "extraInput": "none",
+     "unit": "",
+     "tool": "Inspection app",
+     "section": null,
+     "roomTypes": [
+      "H",
+      "K",
+      "U",
+      "W",
+      "B",
+      "S",
+      "F"
+     ]
+    }
+   ]
+  }
+ ]
+}
